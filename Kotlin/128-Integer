@@ -1,0 +1,40 @@
+# Kotlin 128 Integer
+
+```c
+fun main() {
+    val a: Int = 128
+    val b = a
+    val c: Int? = a
+    val d: Int? = a
+    println(a === b)
+    println(a === c)
+    println(a === d)
+    println(c === d)
+    println("————————")
+    val s1: Int = 123
+    val s2 = s1
+    val s3: Int? = s1
+    val s4: Int? = s1
+    println(s1 === s2)
+    println(s1 === s3)
+    println(s1 === s4)
+    println(s3 === s4)
+}
+```
+
+결과 
+
+> true 
+true
+true
+false
+———
+true
+true
+true
+true
+> 
+
+값이 128이상이면 false가 나오기 시작한다.
+
+왤까😲
